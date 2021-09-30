@@ -54,6 +54,7 @@ years <- seq(from=2015, to= 2019)
 dataset <- get_series(years)
 
 write_xlsx(dataset, "dgt_accidentes_general_2015_2019.xlsx")
+write.csv(dataset, "dgt_accidentes_general_2015_2019.csv")
 
 # llegir les altres fulles de càlcul
 # df_prov_via_urb <- read_excel(tf, 1L)[c(-1,-2),c(1,7:11)]
